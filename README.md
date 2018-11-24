@@ -30,10 +30,10 @@ services:
   google_assistant:
     container_name: gassist
     restart: unless-stopped
-    image: winterscar/GoogleAssistantWebserver
+    image: winterscar/google-assistant-webserver
     environment:
-      - PROJECT_ID="<your project id here>"
-      - DEVICE_MODEL_ID="<your device model id here>"
+      - PROJECT_ID=<your project id here>
+      - DEVICE_MODEL_ID=<your device model id here>
     volumes:
       - ~/googleassistant:/google-assistant
     ports:
