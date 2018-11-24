@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 
 # Common directory
 VOLUME /google-assistant
-ADD hotword_webserver.py /server
+ADD hotword_webserver.py /server/
 
 # Set locales
 ENV \
